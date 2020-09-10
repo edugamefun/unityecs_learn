@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class CreateSolider_Manager : MonoBehaviour
 {
+    public AttackTargetPositionManager m_AttackTarget;
     public int XCount = 5;
     public int ZCount = 5;
     public int OffsetX = 5;
@@ -19,23 +20,29 @@ public class CreateSolider_Manager : MonoBehaviour
     public GameObject m_TargetPrefab;
     public Vector3 m_TargetScale = new Vector3(1, 1, 1);
     public int m_TargetDistZ = 50;
+    public List<Transform> m_TargetList = new List<Transform>();
 
     void Start()
     {
+        //CreateTarget();
+
         CreateGO();
         CreateObstacleX();
         CreateObstacleZ();
-        CreateTarget();
     }
 
     private void CreateTarget()
     {
+        m_TargetList.Clear();
+
         for (int z = 0; z < ZCount; z++)
         {
             var g = GameObject.Instantiate(m_TargetPrefab);
             g.transform.SetParent(m_Parent, false);
             g.transform.localPosition = new Vector3(z * OffsetZ, 0, m_TargetDistZ);
             g.transform.localScale = m_TargetScale;
+            //
+            m_TargetList.Add(g.transform);
         }
     }
 
@@ -78,6 +85,13 @@ public class CreateSolider_Manager : MonoBehaviour
         var g = GameObject.Instantiate<GameRoleSoliderTag>(m_PrefabSolider);
         g.transform.SetParent(m_Parent, false);
         g.transform.localPosition = new Vector3(x * OffsetX, 0, z * OffsetZ);
+        //
+        g.m_IndexX = x;
+        g.m_IndexZ = z;
+        //
 
+        g.m_TargetIndex = x;
+
+        g.m_Target.target = m_AttackTarget.m_TargetList[g.m_TargetIndex];
     }
 }
