@@ -1,0 +1,8 @@
+
+*.csproj
+ecs_hitdelete/.vs/ecs_hitdelete/v16/.suo
+ecs_hitdelete/Library
+ecs_hitdelete/Logs
+ecs_hitdelete/obj
+ecs_hitdelete/Temp
+*.sln
