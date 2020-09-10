@@ -722,10 +722,11 @@ MonoBehaviour:
   SoliderCount: 0
   m_ObstaclePrefab: {fileID: 759346311412289517, guid: 3586660fa12fea147a008d83edcfcee1,
     type: 3}
-  m_ObstacleScale: {x: 1, y: 1, z: 50}
+  m_ObstacleScale: {x: 1, y: 1, z: 20}
   m_TargetPrefab: {fileID: 1342295573080641108, guid: 1210a08a5f7947d4ebb199501f20e0a1,
     type: 3}
   m_TargetScale: {x: 1, y: 1, z: 1}
+  m_TargetDistZ: 23
 --- !u!4 &1161843584
 Transform:
   m_ObjectHideFlags: 0
