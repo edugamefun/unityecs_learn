@@ -6,3 +6,25 @@ github.com/UnityTechnologies/ATerribleKingdom
 
 Blending gameplay & storytelling w/ Timeline: Cutscenes & game graphics | Unite Now 2020
 https://www.youtube.com/watch?v=gsEe0_o_934
+
+Untiy 控制timeline暂停播放
+
+控制播放的函数
+PlayableDirector.Pause()          暂停       停止在当前时间
+PlayableDirector.Play()           播放       暂停后继续播放，停止后重新播放
+PlayableDirector.Stop()           停止       从初始时间播放
+PlayableDirector.Resume()         继续       停止后无效，暂停后继续播放
+
+播放状态的变量
+PlayableDirector.initialTime     初始位置
+PlayableDirector.duration        总长度
+PlayableDirector.time            当前播放长度
+
+跳转到时间位置
+playable.Stop();
+playable.initialTime = 10;
+playable.Play();
+
+
+获取播放进度
+float normalizedTime = (float)(playable.time / playable.duration);
