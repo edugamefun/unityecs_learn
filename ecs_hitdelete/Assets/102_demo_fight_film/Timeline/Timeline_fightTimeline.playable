@@ -27,6 +27,22 @@ MonoBehaviour:
     - {fileID: 3244683461963264579}
     - {fileID: 7522104833924105677}
     - {fileID: 6145099946368858709}
+    - {fileID: -3863313582833283470}
+--- !u!114 &-3863313582833283470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Signal Emitter Solider Fight
+  m_EditorClassIdentifier: Assembly-CSharp::SignalEmitterSoliderFight
+  m_Time: 0.4666666666666667
+  m_ID: 0
+  speed: 5
 --- !u!114 &-2377943237152052364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,6 +171,7 @@ MonoBehaviour:
   m_Name: Signal Emitter Solider Fight
   m_EditorClassIdentifier: Assembly-CSharp::SignalEmitterSoliderFight
   m_Time: 2.6166666666666667
+  m_ID: 0
   speed: 12
 --- !u!114 &7522104833924105677
 MonoBehaviour:
@@ -169,4 +186,5 @@ MonoBehaviour:
   m_Name: Signal Emitter Solider Fight
   m_EditorClassIdentifier: Assembly-CSharp::SignalEmitterSoliderFight
   m_Time: 0.8333333333333334
+  m_ID: 1
   speed: 1

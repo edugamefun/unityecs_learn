@@ -9,6 +9,7 @@ using UnityEngine.Timeline;
 /// </summary>
 public class SignalEmitterSoliderFight: Marker,INotification
 {
+    public int m_ID = 0;
     public float speed;
 
     public PropertyName id

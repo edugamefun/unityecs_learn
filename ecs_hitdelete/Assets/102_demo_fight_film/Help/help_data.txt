@@ -1,5 +1,9 @@
 Playables
 
+暂停和继续TIMELINE
+https://connect.unity.com/p/wei-timelinechuang-zao-xing-di-she-ji-jiao-ben
+
+
 github.com/ciro-unity/UnityRoyale-Public
 github.com/ciro-unity/Danmaku
 github.com/UnityTechnologies/ATerribleKingdom
